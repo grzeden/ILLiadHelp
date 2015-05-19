@@ -8,108 +8,104 @@
     <meta name="author" content="Dennis Grzegorzewski">
     <meta name="created" content="2015-05-17T12:00:00-06:00">
     <link rel="stylesheet" href="css/help.css">
-    <script src="scripts/jquery-1.11.3.min.js"></script>
-    <script src="scripts/jquery-migrate-1.2.1.min.js"></script>
-    <script src="scripts/jquery-ui.min.js"></script>
-    <script src="scripts/accordion.js"></script>
     <title>Awaiting Citation Completion</title>
   </head>
   <body>
-  <main>
-  <header>
-    <img src="images/illlogo.png" alt="ill logo" height="24" width="24">
-    <h1>Awaiting Citation Completion</h1>
-    <p>Dennis Grzegorzewski, 24 November 2014 (created 3 November 2014).</p>
-    <p><em>UNFINISHED.</em></p>
-  </header>
-  <section id="description">
-    <h2>Description:</h2>
-    <!-- description here -->
-    <p>This status queue holds new requests that have been cleared of copyright, and placed by cleared users whose expiration date has not passed.</p>
-    <p>At this step, requested articles are searched for in Google to find and input any missing or incorrect information in their citations.</p>
-    <p>Then, loans and article journals are searched for in OCLC to select the most appropriate bibliographic record the matches the item in the citation, and the corresponding OCLC number is copied to the request.</p>
-    <p>Finally, the OPAC, or our catalogue, is searched to determine if the requested item is owned by our library. If so location information is imported to the request for stacks searching.</p>
-    <p>This is also the point where a requested item is verified as a loan or an article request, and duplicate requests for a single user are cancelled.</p>
-    <p>With a complete citation the potential lending library is more likely to fill requests and to do so quickly.</p>
-    <p>Requests are automatically routed to this queue from the <b>Awaiting Request Processing</b>, <b>Awaiting User Clearance</b>, or <b>Awaiting User Expiration Updating</b> queues when the user is cleared, and their expiration date has not passed.</p>
-    </section><!-- /end #description -->
-    <section id="process">
-      <h2>To process:</h2>
-      <!-- process steps here -->
-      <p>Completing the citation is more of an art than a step by step list. So, the citation completion process can only be described in generalities, but it can be broken down into two main parts.</p>
-      <p>First...</p>
-      <p>Use the Google tab to search for, verify, correct, and complete citation information for article and book chapter requests. Loans are best validated through the OCLC tab as described below.</p>
-      <p>Each of the following fields in the <b>Article Info</b> tab need to be filled in if possible.</p>
-      <ul>
-        <li><b>Journal Tile</b></li>
+    <main>
+      <header>
+        <img src="images/illlogo.png" alt="ill logo" height="24" width="24">
+        <h1>Awaiting Citation Completion</h1>
+        <p>Dennis Grzegorzewski, 18 May 2015 (created 18 May 2015).</p>
+        <p><em>UNFINISHED.</em></p>
+      </header>
+      <section id="description">
+        <h2>Description:</h2>
+        <!-- description here -->
+        <p>This status queue holds new requests that have been cleared of copyright, and placed by cleared users whose expiration date has not passed.</p>
+        <p>At this step, requested articles are searched for in Google to find and input any missing or incorrect information in their citations.</p>
+        <p>Then, loans and article journals are searched for in OCLC to select the most appropriate bibliographic record the matches the item in the citation, and the corresponding OCLC number is copied to the request.</p>
+        <p>Finally, the OPAC, or our catalogue, is searched to determine if the requested item is owned by our library. If so location information is imported to the request for stacks searching.</p>
+        <p>This is also the point where a requested item is verified as a loan or an article request, and duplicate requests for a single user are cancelled.</p>
+        <p>With a complete citation the potential lending library is more likely to fill requests and to do so quickly.</p>
+        <p>Requests are automatically routed to this queue from the <b>Awaiting Request Processing</b>, <b>Awaiting User Clearance</b>, or <b>Awaiting User Expiration Updating</b> queues when the user is cleared, and their expiration date has not passed.</p>
+      </section><!-- /end #description -->
+      <section id="process">
+        <h2>To process:</h2>
+        <!-- process steps here -->
+        <p>Completing the citation is more of an art than a step by step list. So, the citation completion process can only be described in generalities, but it can be broken down into two main parts.</p>
+        <p>First...</p>
+        <p>Use the Google tab to search for, verify, correct, and complete citation information for article and book chapter requests. Loans are best validated through the OCLC tab as described below.</p>
+        <p>Each of the following fields in the <b>Article Info</b> tab need to be filled in if possible.</p>
         <ul>
-          <li>This is required if there is no ISxN.</li>
+          <li><b>Journal Tile</b></li>
+          <ul>
+            <li>This is required if there is no ISxN.</li>
+          </ul>
+          <li><b>Volume</b></li>
+          <ul>
+            <li>This is required if there is no year.</li>
+          </ul>
+          <li><b>Issue</b></li>
+          <ul>
+            <li>This is required if there is no month. Annuals do not have issues or months.</li>
+          </ul>
+          <li><b>Month</b></li>
+          <ul>
+            <li>This is required if there is no issue. Annuals do not have issues or months.</li>
+          </ul>
+          <li><b>Year</b></li>
+          <ul>
+            <li>This is required if there is no volume.</li>
+          </ul>
+          <li><b>Pages</b></li>
+          <ul>
+            <li>This is required if there is no author or article title. Both beginning and end pages if possible.</li>
+          </ul>
+          <li><b>Article Author</b></li>
+          <ul>
+            <li>This is required if there is no article title or pages.</li>
+          </ul>
+          <li><b>Article Tile</b></li>
+          <ul>
+            <li>This is required if there is no article author or pages.</li>
+          </ul>
         </ul>
-        <li><b>Volume</b></li>
+        <p>Please note the following.</p>
         <ul>
-          <li>This is required if there is no year.</li>
+          <li>This tab automatically searches for the Article Title or the Loan Title where appropriate.</li>
+          <li>First look for information in the preview material returned under each link displayed. There can be any or all of the citation listed here, which can be copied and pasted into the request citation on the Detail tab.</li>
+          <li>Adding the page numbers after the quoted title may display more information here, since the title is usually listed near the beginning and the page numbers are usually listed near the end of the citation.</li>
+          <li>When the title is listed in the link, the link goes directly to a citation for the title, or even a pdf of the article, where information to complete the citation may also be obtained.</li>
+          <li>When the some other title is listed in the link, the title is listed in the references of some other document. Finding the citation listing may prove difficult or time-consuming by following these links, and may even be hidden. For these it is best to add more of the citation to the search, such as the page numbers, so that more will be displayed in the preview.</li>
+          <li>When the link starts out with [PDF] it leads to a pdf document.</li>
+          <li>www.ncbi.nlm.nih.gov has the most complete information, and possibly a link to the owning journal.</li>
+          <li>cat.inist.fr has most information, but it never has the month.</li>
+          <li>www.sciencedirect.com may list the complete citation and may even have a link to the pdf.</li>
+          <li>onlinelibrary.wiley.com usually lists the volume and issue in the breadcrumb navigation under the link.</li>
+          <li>You may find the journal title, volume and issue in the link, which may take you to the journal listing where you may find missing information or verification for the citation.</li>
+          <li>Before changing any information in the original citation make certain that the original information is incorrect, and that the information that is replacing it is complete and correct. If there is any doubt, route the request to the <b>Awaiting Extensive Searching</b> queue instead.</li>
         </ul>
-        <li><b>Issue</b></li>
+        <p>Then ...</p>
+        <p>Use the OCLC tab to search for the most appropriate bibliographic record.</p>
+        <p>Preferences for searching.</p>
+        <ol>
+          <li>Search by <b>ISxN</b> first to find the specific edition.</li>
+          <li>Search by <b>Scan Title</b> if there is no ISxN.</li>
+          <li>Do not select <b>Internet Resource</b> format unless there are no holdings for serial or book versions.</li>
+          <li>Select largest number of holdings that matches the other criteria.</li>
+          <li>P or D in <b>L</b> column are more likely to be held by American libraries.</li>
+          <li>A checked box in the <b>Owned</b> column means we may own the item</li>
+          <li>The request year must fall inside the years designated in the <b>Year</b> column.</li>
+          <li>The ISxN should match the ISxN on the request, but the ISxN on the request may not be correct.</li>
+          <li>The journal title should match the journal title on the request, but may not.</li>
+        </ol>
+        <p>Select the most appropriate item in the <b>Search Results</b> tab. Then...</p>
         <ul>
-          <li>This is required if there is no month. Annuals do not have issues or months.</li>
+          <li>Click on the <b>Copy Info</b> button in the <b>Record</b> section of the <b>OCLC</b> ribbon.</li>
+          <ul>
+            <li> This adds the OCLC number for this record to the record in the <b>Details screen</b>.</li>
+          </ul>
         </ul>
-        <li><b>Month</b></li>
-        <ul>
-          <li>This is required if there is no issue. Annuals do not have issues or months.</li>
-        </ul>
-        <li><b>Year</b></li>
-        <ul>
-          <li>This is required if there is no volume.</li>
-        </ul>
-        <li><b>Pages</b></li>
-        <ul>
-          <li>This is required if there is no author or article title. Both beginning and end pages if possible.</li>
-        </ul>
-        <li><b>Article Author</b></li>
-        <ul>
-          <li>This is required if there is no article title or pages.</li>
-        </ul>
-        <li><b>Article Tile</b></li>
-        <ul>
-          <li>This is required if there is no article author or pages.</li>
-        </ul>
-      </ul>
-      <p>Please note the following.</p>
-      <ul>
-        <li>This tab automatically searches for the Article Title or the Loan Title where appropriate.</li>
-        <li>First look for information in the preview material returned under each link displayed. There can be any or all of the citation listed here, which can be copied and pasted into the request citation on the Detail tab.</li>
-        <li>Adding the page numbers after the quoted title may display more information here, since the title is usually listed near the beginning and the page numbers are usually listed near the end of the citation.</li>
-        <li>When the title is listed in the link, the link goes directly to a citation for the title, or even a pdf of the article, where information to complete the citation may also be obtained.</li>
-        <li>When the some other title is listed in the link, the title is listed in the references of some other document. Finding the citation listing may prove difficult or time-consuming by following these links, and may even be hidden. For these it is best to add more of the citation to the search, such as the page numbers, so that more will be displayed in the preview.</li>
-        <li>When the link starts out with [PDF] it leads to a pdf document.</li>
-        <li>www.ncbi.nlm.nih.gov has the most complete information, and possibly a link to the owning journal.</li>
-        <li>cat.inist.fr has most information, but it never has the month.</li>
-        <li>www.sciencedirect.com may list the complete citation and may even have a link to the pdf.</li>
-        <li>onlinelibrary.wiley.com usually lists the volume and issue in the breadcrumb navigation under the link.</li>
-        <li>You may find the journal title, volume and issue in the link, which may take you to the journal listing where you may find missing information or verification for the citation.</li>
-        <li>Before changing any information in the original citation make certain that the original information is incorrect, and that the information that is replacing it is complete and correct. If there is any doubt, route the request to the <b>Awaiting Extensive Searching</b> queue instead.</li>
-      </ul>
-      <p>Then ...</p>
-      <p>Use the OCLC tab to search for the most appropriate bibliographic record.</p>
-      <p>Preferences for searching.</p>
-      <ol>
-        <li>Search by <b>ISxN</b> first to find the specific edition.</li>
-        <li>Search by <b>Scan Title</b> if there is no ISxN.</li>
-        <li>Do not select <b>Internet Resource</b> format unless there are no holdings for serial or book versions.</li>
-        <li>Select largest number of holdings that matches the other criteria.</li>
-        <li>P or D in <b>L</b> column are more likely to be held by American libraries.</li>
-        <li>A checked box in the <b>Owned</b> column means we may own the item</li>
-        <li>The request year must fall inside the years designated in the <b>Year</b> column.</li>
-        <li>The ISxN should match the ISxN on the request, but the ISxN on the request may not be correct.</li>
-        <li>The journal title should match the journal title on the request, but may not.</li>
-      </ol>
-      <p>Select the most appropriate item in the <b>Search Results</b> tab. Then...</p>
-      <ul>
-        <li>Click on the <b>Copy Info</b> button in the <b>Record</b> section of the <b>OCLC</b> ribbon.</li>
-        <ul>
-          <li> This adds the OCLC number for this record to the record in the <b>Details screen</b>.</li>
-        </ul>
-      </ul>
       </section><!-- /end #process -->
       <section id="information">
         <h2>More information:</h2>
@@ -120,9 +116,14 @@
           <li>or to the <b>Awaiting User Expiration Updating</b> status queue if the user has been cleared, but the user's expiration date has passed.</li>
         </ul>
         <p>This information has been updated for ILLiad 8.5.2.0.</p>
-        </section><!-- /end #information -->
-        </main>
-        <footer>
-        </footer>
-      </body>
-    </html>
+      </section><!-- /end #information -->
+    </main>
+    <footer>
+    <!-- put back button here -->
+    </footer>
+    <script src="scripts/jquery-1.11.3.min.js"></script>
+    <script src="scripts/jquery-migrate-1.2.1.min.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/accordion.js"></script>
+  </body>
+</html>
