@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- saved from url=(0014)about:internet -->
+    <link rel="stylesheet" href="css/help.css" />
+    <script src="scripts/jquery-1.11.1.min.js"></script>
+    <script src="scripts/jquery-migrate-1.2.1.min.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/jquery.nestedAccordion.min.js"></script>
+    <title>Awaiting Lending Scanning</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="images/illlogo.png" alt="ill logo" height="24" width="24">
+	      <h1>Awaiting Lending Scanning</h1>
+        <p>Dennis Grzegorzewski, 24 November 2014 (created 3 November 2014).</p>
+        <p><em>UNFINISHED.</em></p>
+      </header>
+      <section id="description">
+	      <h2>Description:</h2>
+        <!-- description here -->
+	      <p>This queue holds the list of article requests that are ready to be received through Odyssey Electronic Delivery. The files that are to be received need to be checked for correctness, completeness, and readability before they are delivered.</p>
+      </section><!-- /end #description -->
+      <section id="process">
+	      <h2>To process:</h2>
+        <!-- process steps here -->
+	      <ol>
+				<li>Click on the <b>Refresh (F5)</b> icon.</li>
+				<ol>
+					<li>This refreshes the listed data to the current state.</li>
+					</ol>
+					<li>Click on the <b>Main (F12)</b> tab.</li>
+					<li>Click on the <b>Borrowing</b> tab.</li>
+					<ol>
+						<li>This displays the list of Borrowing Request queues.</li>
+					</ol>
+					<li>Click on the <b>Borrowing</b> tab in the ribbon menu.</li>
+					<li>Click on the <b>Electronic Delivery</b> icon in the Receive Request section.</li>
+					<ol>
+						<li>This opens the Electronic Delivery window</li>
+						<li>If there are requests remaining to be processed, these must be cleared out before new requests can be processed.</li>
+					</ol>
+					<li>Click on the <b>Process Files</b> icon to load in new requests to receive.</li>
+					<li>Requests that load into the <b>No ILL Number Match</b> section need to be matched to the request's ILL or Transaction Number.</li>
+					<ol>
+						<li>Copy the request's ILL number from the cover page. If the request's ILL number cannot be found in the document, an extensive search is required</li>
+						<ol>
+							<li>Look for the article title and copy the title</li>
+							<li>Search for a request that matches the article title</li>
+							<ol>
+								<li>On the main ILLiad window, click on the <b>Home</b> tab in the ribbon menu</li>
+								<li>Paste the article title into Citation Information</li>
+								<li>Click Search</li>
+							</ol>
+							<li>Verify that the request is the one being processed (check the rest of the citation information)</li>
+							<li>Change the request status to <b>Request Sent</b></li>
+							<li>Copy the ILL Number</li>
+							<li>Close the request</li>
+						</ol>
+						<li>On the Electronic Delivery window, paste the ILL Number into the ILL field</li>
+						<li>Click Match ILL Number</li>
+					</ol>
+					<li>Requests that load into the <b>No Ariel Lender Match</b> section need to be matched to one of the Lenders in the request's Lender List.</li>
+					<ol>
+						<li>Look for the lender from the cover page. The lender will be marked with an asterisk (*) next to their lender code. (Example: IAH* - IIT is the lender) If the lender cannot be found in the document, click View in the Request Information box</li>
+						<ol>
+							<li>Look for the lender in the Lender String field of the OCLC Information box</li>
+						</ol>
+						<li>Choose the appropriate lender in the <b>No Ariel Lender Match</b> box</li>
+						<li>Click <b>Attach Lender Info</b></li>
+					</ol>
+					<li>Requests that load into the <b>Review</b> section are ready to be received.</li>
+					<ol>
+						<li>Double click on a transaction number to open.</li>
+						<li>Examine each page for readability and completeness.</li>
+						<li>Crop, Rotate, or Deskew as necessary.</li>
+						<li>Examine document as a whole, for completeness and proper page order.</li>
+					</ol>
+				</ol>
+      </section><!-- /end #process -->
+      <section id="information">
+	      <h2>More information:</h2>
+        <!-- additional information here -->
+				<p>This information has been updated for ILLiad 8.5.2.0.</p>
+      </section><!-- /end #information -->
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>

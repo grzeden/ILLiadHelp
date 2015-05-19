@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- saved from url=(0014)about:internet -->
+    <link rel="stylesheet" href="css/help.css" />
+    <script src="scripts/jquery-1.11.1.min.js"></script>
+    <script src="scripts/jquery-migrate-1.2.1.min.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/jquery.nestedAccordion.min.js"></script>
+    <title>Awaiting Request Processing (LIB)</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="images/illlogo.png" alt="ill logo" height="24" width="24">
+	      <h1>Awaiting Request Processing (LIB)</h1>
+        <p>Dennis Grzegorzewski, 24 November 2014 (created 3 November 2014).</p>
+        <p><em>UNFINISHED.</em></p>
+      </header>
+      <section id="description">
+	      <h2>Description:</h2>
+        <!-- description here -->
+	      <p>Requests in this status need to be verified for correct citation and then sent to possible lenders. The main difference between requests in this status and those in 'Awaiting Request Processing (Checked)' are that these requests are made by library workers. Library workers are allowed to request textbooks, while other students cannot.</p>
+      </section><!-- /end #description -->
+      <section id="process">
+	      <h2>To process:</h2>
+        <!-- process steps here -->
+	      <ol>
+				  <li>Double-click <b>"Awaiting Request Processing"</b> under the <b>Main>Borrowing</b> Tab</li>
+					<li>Choose a request to process</li>
+					<li>Verify that the citation <b>(ISSN/ISBN, Article Title, Volume, Issue, Pg. #, Edition, etc)</b> is correct using <b>'Google Search'</b></li>
+					<ol>
+						<li>Click the <b>'Google Search' Tab'</b></li>
+						<li>Search for sources that can contain the correct citation. ILLiad automatically inputs the Book Title and Article Title into Google. If the Google search does not find good sources, include Author and/or Journal Title, if applicable, into the search.</li>
+						<li>Check the citations with the source, then add information or make any changes, if necessary</li>
+					</ol>
+					<li>Search for the book/article in <b>OCLC</b></li>
+					<ol>
+						<li>Click the <b>'OCLC'</b> Tab</li>
+						<li>Click the magnifying glass by ISxN to search by the <b>ISBN/ISSN</b></li>
+						<li>Double click the record that has the most holdings but is not an internet resource</li>
+					</ol>
+					<li>Fill in the request's workform with lenders</li>
+					<ol>
+						<li>For journals, double click the lenders that indicate they have the volume for the request</li>
+						<li>For books, a more extensive process is required</li>
+						<ol>
+							<li>Log on to <b>FirstSearch</b> (URL: http://firstsearch.oclc.org/ Auth.: 100077549 PW: pmk)</li>
+							<li>Paste the <b>ISBN</b> of the request into the <b>'Search for:'</b> field and select <b>'ISBN'</b> in the drop box next to the field</li>
+							<li>Click <b>Search</b></li>
+							<li>Choose the book that matches the request and verify the edition</li>
+							<li>Under <b>'Custom Holdings Path'</b>, select <b>'BOOK'</b> and click search</li>
+							<li>Starting from the top of the list, check to see if each lender has the requested book available</li>
+							<ol>
+								<li>Click a lender name</li>
+								<li>Read the book's entry and ensure that the book is available. The book is not available if the book is located in reserve, or has a due date</li>
+							</ol>
+							<li>For every lender that has the requested book available, select their lender code on ILLiad's workform. Keep searching for possible lenders until 5 lenders are selected</li>
+						</ol>
+					</ol>
+					<li>Click <b>'Update Work Form'</b></li>
+					<li>Click <b>'Send Request'</b></li>
+					<li>Click <b>'Request Sent'</b></li>
+				</ol>
+      </section><!-- /end #process -->
+      <section id="information">
+	      <h2>More information:</h2>
+        <!-- additional information here -->
+        <p>This information has been updated for ILLiad 8.5.2.0.</p>
+      </section><!-- /end #information -->
+    </main>
+    <footer>
+    </footer>
+    <script>
+      $(function() {
+      $("html").addClass("js");
+      $.fn.accordion.defaults.container = false;
+      $( "#accordion" ).accordion({
+        el: ".h",
+        head: "h3, h4, h5",
+        next: "div",
+        showspeed: 1000
+      });
+      $("html").removeClass("js");
+      });
+    </script>
+  </body>
+</html>

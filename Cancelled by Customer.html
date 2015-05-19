@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- saved from url=(0014)about:internet -->
+    <link rel="stylesheet" href="css/help.css" />
+    <script src="scripts/jquery-1.11.1.min.js"></script>
+    <script src="scripts/jquery-migrate-1.2.1.min.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/jquery.nestedAccordion.min.js"></script>
+    <title>Cancelled by Customer</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="images/illlogo.png" alt="ill logo" height="24" width="24">
+	      <h1>Cancelled by Customer</h1>
+        <p>Dennis Grzegorzewski, 24 November 2014 (created 3 November 2014).</p>
+        <p><em>UNFINISHED.</em></p>
+      </header>
+      <section id="description">
+	      <h2>Description:</h2>
+        <!-- description here -->
+				<p>Requests are placed in this queue by the customer who desires to cancel their request. We need to finish the cancellation so their request is finished.</p>
+      </section><!-- /end #description -->
+      <section id="process">
+	      <h2>To process:</h2>
+        <!-- process steps here -->
+				<ol>
+					<li>If in the <b>OCLC Information</b>, the ILL Number, and Lending String are blank...</li>
+					<ol>
+						<li>Click on <b>Cancel Request</b> button in the <b>Next Step</b> ribbon section.</li>
+						<li>Select <b>Cancelled by Patron</b> from the <b>Reasons for Cancellation</b> drop-down menu.</li>
+						<li>Uncheck the <b>Send E-mail</b> check-box.</li>
+						<ol>
+							<li>So no email is sent.</li>
+						</ol>
+						<li>Click on the <b>Cancel Request</b> button.</li>
+						<ol>
+							<li>This will route the request to the <b>Cancelled By ILL Staff</b> queue.</li>
+						</ol>
+					</ol>
+					<li>Otherwise...</li>
+					<ol>
+						<li>Route the request back to <b>Request Sent</b>.</li>
+						<ol>
+							<li>Only requests that have not been sent can be cancelled by the user.</li>
+						</ol>
+					</ol>
+					<li>Repeat until all requests are processed.</li>
+				</ol>
+      </section><!-- /end #process -->
+      <section id="information">
+	      <h2>More information:</h2>
+        <!-- additional information here -->
+        <p>Additional Information here.</p>
+        <p>This information has been updated for ILLiad 8.5.2.0.</p>
+      </section><!-- /end #information -->
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>

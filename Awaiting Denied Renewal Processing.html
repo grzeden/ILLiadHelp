@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- saved from url=(0014)about:internet -->
+    <link rel="stylesheet" href="css/help.css" />
+    <script src="scripts/jquery-1.11.1.min.js"></script>
+    <script src="scripts/jquery-migrate-1.2.1.min.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/jquery.nestedAccordion.min.js"></script>
+    <title>Awaiting Denied Renewal Processing</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="images/illlogo.png" alt="ill logo" height="24" width="24">
+        <h1>Awaiting Denied Renewal Processing</h1>
+        <p>Dennis Grzegorzewski, 24 November 2014 (created 3 November 2014).</p>
+        <p><em>COMPLETED.</em></p>
+      </header>
+      <section id="description">
+        <h2>Description:</h2>
+        <!-- description here -->
+        <p>This queue holds requests that have the OCLC Category NoRenewal.</p>
+  			<p>The lender has denied renewal for the requests in this queue.</p>
+  			<p>These requests need to have their due dates updated, and emails need to be sent to the customers to inform them that their requests can not be renewed and will need to be returned by the due date indicated.</p>
+      </section><!-- /end #description -->
+      <section id="process">
+        <h2>To process:</h2>
+        <!-- process steps here -->
+        <ol>
+          <li>Read the <b>Renewal Denied</b> note in the <b>Note</b> section at the bottom of the request to get the new <b>Due Date</b>.</li>
+          <li>Subtract 5 days from this date.</li>
+          <ol>
+            <li>If this date is earlier than tomorrow, use tomorrow's date.</li>
+          </ol>
+          <li>Enter this new date into the <b>Due Date</b> field of the <b>Item Information</b> section of the <b>Borrowing Request</b> window.</li>
+          <li>Uncheck the <b>Allow Renewals?</b> checkbox.</li>
+          <li>Click on the <b>Save Changes</b> icon.</li>
+          <li>Click on the <b>Send EMail</b> icon in the <b>User</b> section.</li>
+          <li>Click on <b>Denied Renewal Notice</b> in the drop-down menu.</li>
+          <ol>
+            <li>This opens the <b>Edit EMail Form</b> page.</li>
+          </ol>
+          <li>Click on the <b>Send</b> button.</li>
+          <li>The request's status is automatically changed to <b>Checked Out to Customer</b>.</li>
+          <li>The <b>Borrowing Request</b> window automatically closes.</li>
+          <li>Repeat until all requests are processed.</li>
+  			</ol>
+      </section><!-- /end #process -->
+      <section id="information">
+        <h2>More information:</h2>
+        <!-- additional information here -->
+        <p>If for some reason there is no <b>Denied Renewal</b> note, the due date can be found by doing the following from the <b>Borrowing Request</b> window.</p>
+  			<ol>
+  				<li>Click on the <b>OCLC</b> ribbon tab.</li>
+  				<li>Click on the <b>Show</b> icon in the <b>Request</b> section.</li>
+  				<ol>
+  					<li>This opens the <b>OCLC Request</b> window.</li>
+  					<li>Read the <b>Due Date</b>.</li>
+            <li>Subtract 5 days from this date.</li>
+  					<li>Close this window.</li>
+  				</ol>
+  				<li>Again, if this date is earlier than tomorrow, use tomorrow's date. </li>
+  			</ol>
+  			<p>This information has been updated for ILLiad 8.5.2.0.</p>
+      </section><!-- /end #information -->
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>

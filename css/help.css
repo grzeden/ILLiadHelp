@@ -1,0 +1,91 @@
+body {
+    color: #355CBF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+main {
+    display: block;
+    width: 600px;
+    padding: 10px;
+    background-color: #E3EFFF;
+    background: linear-gradient(#F3F8FF, #E3EFFF, #E3EFFF, #E3EFFF, #E3EFFF, #E3EFFF, #E3EFFF, #E3EFFF, #E3EFFF, #F3F8FF);
+    border: 1px solid #6593CF;
+    border-radius: 3px
+}
+
+header img {
+    float: left;
+}
+
+h1 {
+    color: #3D3D3D;
+    background-color: #F3F8FF;
+    font-size: 16px;
+    border: 1px solid #6593CF;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: .3em;
+}
+
+h2 {
+    background-color: #BFDBFF;
+    font-size: 14px;
+    border: 1px solid #6593CF;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: .3em;
+}
+
+h3 {
+    font-size: 13px;
+}
+
+h4 {
+    font-size: 12px;
+}
+
+h5 {
+    font-size: 12px;
+}
+
+p {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-left: 15px;
+    padding-left: 10px;
+}
+
+ol {
+    list-style-type: decimal;
+    margin-left: 15px;
+    padding-left: 10px;
+}
+
+ol ol {
+    list-style-type: lower-alpha;
+}
+
+ol ol ol {
+    list-style-type: lower-roman;
+}
+
+ol ol ol ol {
+    list-style-type: decimal;
+}
+
+ol ol ol ol ol {
+    list-style-type: lower-alpha;
+}
+
+ol ol ol ol ol ol {
+    list-style-type: lower-roman;
+}
+
+ul.accordion, ul.accordion ul {
+    list-style: none;
+}
