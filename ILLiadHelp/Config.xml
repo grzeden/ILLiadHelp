@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ILLiad Help</Name>
+  <Author>Dennis Grzegorzewski, Paul V. Galvin Libary, Illinois Institute of Technology, grzegozewski@iit.edu</Author>
+  <Version>1.0</Version>
+  <Active>True</Active>
+  <Type>Addon</Type>
+  <!-- Modified By: Dennis Grzegorzewski, Paul V. Galvin Libary, Illinois Institute of Technology, grzegozewski@iit.edu -->
+  <Description>Creates a tab labeled ILLiad Help on the ILLiad main form that creates a browser to display a web page that lists all the processes in the Interlibrary Loan department including those that are not associated with a specific request status.</Description>
+  <Forms>
+    <Form>FormMain</Form>
+  </Forms>
+  <Settings>
+    <Setting name="Help Location" value="X:\ILLiad Help\index.html" type="string">
+      <Description>Location of Help pages on local file server</Description>
+    </Setting>
+  </Settings>
+  <Files>
+    <File>ILLiadHelp.lua</File>
+  </Files>
+</Configuration>
