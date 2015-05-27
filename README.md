@@ -9,7 +9,7 @@ This leads to a problem for the "Received Incorrect/Partial Item" status as file
 
 Another deficiency is the lack of corresponding statuses for certain processes, such as User Clearance. This need led to the creation of a help page Addon that loaded in the main client window instead of the individual request window. This Addon tab labeled ILLiad Help loads an html file that contains a listing of all ILLiad process, whether they have a corresponding status or not.
 
-Recent developments in the Interlibrary Loan Department have created the need for a third help page addressing all department processes that can be accomplished remotely from the department. This last Addon tab also loads into the main client window and is labeled Remote Help.
+Recent developments have created the need for a third help page addressing all department processes that can be accomplished remotely from the department. This last Addon tab also loads into the main client window and is labeled Remote Help.
 #### Installation
 #### Use
 #### Contributers
